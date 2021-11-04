@@ -28,6 +28,9 @@ namespace SimpleCalculator
                 {
                     //Generate a property changed event in the system
                     PropertyChanged(this, new PropertyChangedEventArgs("Answer"));
+
+                    //If Args Set in Background
+                    PropertyChanged(this, new PropertyChangedEventArgs("Arg1"));
                 }
             }
         }
@@ -43,6 +46,9 @@ namespace SimpleCalculator
                 {
                     //Generate a property changed event in the system
                     PropertyChanged(this, new PropertyChangedEventArgs("Answer"));
+
+                    //If Args Set in Background
+                    PropertyChanged(this, new PropertyChangedEventArgs("Arg2"));
                 }
             }
         }
