@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleCalculator.MainPage">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="15">
+        <StackLayout Orientation="Horizontal">
+            <!-- 2 Entry boxes, Label -->
+            <Entry x:Name="EntArg1" Placeholder="000" FontSize="Medium" Keyboard="Numeric"
+                   Text="{Binding Path=Arg1, Mode=TwoWay}"/>
+            <Label Text=" + "/>
+            <Entry x:Name="EntArg2" Placeholder="000" FontSize="Medium" 
+                   Text="{Binding Path=Arg2, Mode=TwoWay}" Keyboard="Numeric"/>
+            <Label Text=" = "/>
+            <Label x:Name="LblAnswer" Text="" FontSize="Medium"/>
+        </StackLayout>
+
+        <Button x:Name="BtnDoMaths" Text="Calculate" HorizontalOptions="Center" Margin="0, 5" Clicked="BtnDoMaths_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
