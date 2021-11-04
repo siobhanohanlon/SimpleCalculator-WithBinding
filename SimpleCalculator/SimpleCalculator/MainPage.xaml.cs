@@ -27,21 +27,10 @@ namespace SimpleCalculator
             this.BindingContext = calc;
         }
 
-        private void EntArg1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //Setting property when value changes
-            calc.Arg1 = Convert.ToInt32(EntArg1.Text);
-        }
-
-        private void EntArg2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //Setting property when value changes
-            calc.Arg2 = Convert.ToInt32(EntArg2.Text);
-        }
-
         private void BtnDoMaths_Clicked(object sender, EventArgs e)
         {
-            LblAnswer.Text = (calc.Answer).ToString();
+            calc.Arg1 = 27;
+            calc.Arg2 = 15;
         }
     }
 }

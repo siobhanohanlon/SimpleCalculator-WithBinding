@@ -12,7 +12,7 @@
             <Entry x:Name="EntArg2" Placeholder="000" FontSize="Medium" 
                    Text="{Binding Path=Arg2, Mode=TwoWay}" Keyboard="Numeric"/>
             <Label Text=" = "/>
-            <Label x:Name="LblAnswer" Text="" FontSize="Medium"/>
+            <Label x:Name="LblAnswer" Text="{Binding Path=Answer, Mode=OneWay}" FontSize="Medium"/>
         </StackLayout>
 
         <Button x:Name="BtnDoMaths" Text="Calculate" HorizontalOptions="Center" Margin="0, 5" Clicked="BtnDoMaths_Clicked"/>
